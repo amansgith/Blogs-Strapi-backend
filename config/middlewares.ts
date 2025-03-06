@@ -1,8 +1,28 @@
 export default [
   'strapi::logger',
   'strapi::errors',
-  'strapi::security',
-  'strapi::cors',
+  {
+    name: 'strapi::security',
+    config: {
+      contentSecurityPolicy: {
+        directives: {
+          'script-src': ["'self'", 'https:'],
+          'img-src': ["'self'", 'data:', 'blob:', 'https://axel-clone.vercel.app'],
+          'media-src': ["'self'", 'data:', 'blob:', 'https://axel-clone.vercel.app'],
+          upgradeInsecureRequests: null,
+        },
+      },
+    },
+  },
+  {
+    name: 'strapi::cors',
+    config: {
+      origin: ['https://axel-clone.vercel.app', 'http://localhost:3000'], // Add your Vercel domain here
+      methods: ['GET', 'POST', 'PUT', 'PATCH', 'DELETE', 'OPTIONS'],
+      headers: ['Content-Type', 'Authorization'],
+      keepHeadersOnError: true,
+    },
+  },
   'strapi::poweredBy',
   'strapi::query',
   'strapi::body',
