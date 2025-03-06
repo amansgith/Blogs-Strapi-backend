@@ -7,8 +7,8 @@ export default [
       contentSecurityPolicy: {
         directives: {
           'script-src': ["'self'", 'https:'],
-          'img-src': ["'self'", 'data:', 'blob:', 'https://axel-clone.vercel.app'],
-          'media-src': ["'self'", 'data:', 'blob:', 'https://axel-clone.vercel.app'],
+          'img-src': ["'self'", 'data:', 'blob:', 'https://axel-clone.vercel.app', 'https://res.cloudinary.com'],
+          'media-src': ["'self'", 'data:', 'blob:', 'https://axel-clone.vercel.app', 'https://res.cloudinary.com'],
           upgradeInsecureRequests: null,
         },
       },
