@@ -17,7 +17,7 @@ export default [
   {
     name: 'strapi::cors',
     config: {
-      origin: ['https://trustwise-insurance-git-designtwo-amansgiths-projects.vercel.app/', 'http://localhost:3000'], // Add your Vercel domain here
+      origin: ['https://trustwise-insurance-git-designtwo-amansgiths-projects.vercel.app/'], // Add your Vercel domain here
       methods: ['GET', 'POST', 'PUT', 'PATCH', 'DELETE', 'OPTIONS'],
       headers: ['Content-Type', 'Authorization'],
       keepHeadersOnError: true,
