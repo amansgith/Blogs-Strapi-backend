@@ -7,8 +7,8 @@ export default [
       contentSecurityPolicy: {
         directives: {
           'script-src': ["'self'", 'https:'],
-          'img-src': ["'self'", 'data:', 'blob:', 'https://trustwise-insurance-dgn684oai-amansgiths-projects.vercel.app/', 'https://res.cloudinary.com'],
-          'media-src': ["'self'", 'data:', 'blob:', 'https://trustwise-insurance-dgn684oai-amansgiths-projects.vercel.app/', 'https://res.cloudinary.com'],
+          'img-src': ["'self'", 'data:', 'blob:', 'https://trustwise-insurance-frontend.onrender.com/', 'https://res.cloudinary.com'],
+          'media-src': ["'self'", 'data:', 'blob:', 'https://trustwise-insurance-frontend.onrender.com/', 'https://res.cloudinary.com'],
           upgradeInsecureRequests: null,
         },
       },
